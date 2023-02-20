@@ -428,6 +428,9 @@ h3{
     display: flex;
     flex-direction: column
     }
+    .ep{
+        font-size: 30px;
+    }
 }
 /*------------------Blog-----------*/
 .B-header{
