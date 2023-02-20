@@ -467,14 +467,15 @@ body {font-family: Verdana,sans-serif;margin:0}
 .next {
   right: 100;
   border-radius: 3px 0 0 3px;
-  margin-left: 630px;
+  margin-left: 626px;
 }
 @media(max-width: 700px){
     .next{
-    margin-left: 300px;
+    margin-left: 276px;
+    margin-top: 112px;
     }
     .prev{
-    margin-left: -75px;
+    margin-top: 112px;
     }
 }
 
