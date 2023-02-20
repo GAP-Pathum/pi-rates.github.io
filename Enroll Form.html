@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirates website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1023cb38a0.js" crossorigin="anonymous">
+           
+    </script>
+</head>
+<body>
+    <section class="AU-header">
+        <nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2>Enrollment Form</h2>
+    </section>
+
+<!-------------Enroll form content------------------>
+<section class="enrollform">
+<form class="UI">
+    <h3>User Information</h3>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone">
+  </form>
+  <form class="PF">
+    <h3>Payment</h3>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="number" name="card_number" placeholder="Card Number" required>
+    <input type="text" name="expiration" placeholder="Expiration Date" required>
+    <input type="number" name="cvv" placeholder="CVV" required>
+  </form>
+  <form class="PS">
+    <h3>Password Setup</h2>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+  </form>
+  <form class="PC">
+    <h3>Parental Consent</h3>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone">
+  
+  <form class="CS">
+    <h3>Course Selection</h3>
+    <input type="text" name="course" placeholder="Course" required>
+    <input type="text" name="instructor" placeholder="Instructor" required>
+    <input type="text" name="location" placeholder="Location" required>
+
+  </form>
+  <form class="AT">
+    <h3>Assessment Test</h2>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="number" name="score" placeholder="Score" required>
+
+  </form>
+  <form class="FF">
+    <h3>Feedback Form</h3>
+    <input type="text" name="name" placeholder="Name" required>
+    <textarea name="feedback" placeholder="Feedback" required></textarea>
+  </form>
+</form>
+<form class="AA">
+  <h3>Access Agreement</h3>
+  <input type="checkbox" name="agreement" required>I agree to the access agreement
+  <script>
+    function enroll() {
+      alert("You Have Successfully Enrolled !");
+    }
+  </script>
+  <input type="submit" value="Enroll" onclick="enroll()">
+</form>
+</section>
+
+
+<!------------FOOTER-------------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are the team "PI-RATES" and our vision is 
+            to share the whole knowledge about Geometry
+            and to do further researches on this field.<br> 
+            We are always here to help to the students who are interested in Geometry.
+        </p>
+        <h4>Visit Us</h4>
+
+        <div class="icons">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+      </div>
+        <p>Made by Pasindu Pathum</p>
+
+    </section>
+
+
+
+
+
+    <!--------------javaScript for toggle menu----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.left="0";
+        }
+        function hideMenu(){
+            navLinks.style.left="-200px";
+        }
+    </script>
+
+</body>
+</html>

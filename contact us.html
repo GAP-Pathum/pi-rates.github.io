@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirates website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1023cb38a0.js" crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+    <section class="AU-header">
+        <nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2>CONTACT US</h2>
+    </section>
+</head>
+<!-------------contact us content------------------>
+<body>
+
+<section class="contact-form">
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="message">Message:</label><BR>
+        <textarea name="message" id="message" cols="69" rows="10" required></textarea>
+        <script>
+            function Send() {
+              alert("Your Messege Has Been Sent Successfully !");
+            }
+          </script>
+        <input type="submit" value="Send" onclick="Send">
+    </form>
+</div>
+
+<!------------FOOTER-------------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are the team "PI-RATES" and our vision is 
+            to share the whole knowledge about Geometry
+            and to do further researches on this field.<br> 
+            We are always here to help to the students who are interested in Geometry.
+        </p>
+        <h4>Visit Us</h4>
+
+        <div class="icons">
+            <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <p>Made by Pasindu Pathum</p>
+
+    </section>
+
+
+
+
+
+    <!--------------javaScript for toggle menu----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.left="0";
+        }
+        function hideMenu(){
+            navLinks.style.left="-200px";
+        }
+    </script>
+
+</body>
+</html>
+
