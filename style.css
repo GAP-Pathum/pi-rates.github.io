@@ -103,7 +103,7 @@ nav .fa{
         background-image:linear-gradient(rgba(0, 8, 24, 0.897),rgba(4,9,30,0.7));
         height: 100vh;
         width: 150px;
-        left: -200px
+        left: -200px;
         top: 0;
         text-align: right;
         z-index: 1;
