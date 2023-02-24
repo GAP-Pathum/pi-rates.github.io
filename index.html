@@ -27,18 +27,43 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact us.html">CONTACT</a></li>
                 </ul>
-            </div>
         </nav>
+        
     <div class="text-box">
         <h1>The Online Geometry Solution</h1>
         <p>Now it is very easy to play with geometry by using this website.<br>
         You can join with us for learning, teaching and reasearching in the depth of the mathematics. 
         </p>
+        <button class="login">Login</button>
         <a href="About.html" class="visitus">Visit us for more</a>
-
     </div>
-
     </section>
+
+    <!--div class="wrapper">
+        <div class="form-box Login">
+            <h3>Login</h3>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa fa-envelope"></i></span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa fa-lock"></i></span>
+                    <input type="text" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account ? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </!--div>
 <!------------course---------->
     <section class="course">
         <h1>What We Conduct</h1>
@@ -162,6 +187,8 @@
         <h1>Enroll For<br> Online Geometry Solution</h1>
         <a href="Enroll Form.html" class="visitus">Enroll from here</a>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+    
 
 <!------------FOOTER-------------------->
     <section class="footer">
@@ -181,7 +208,10 @@
             <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
             <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
         </div>
-        <p>Made by Pasindu Pathum</p>
+        <div class="copyright">
+            Copyright © 2023 - Pi-Rates - All rights reserved | Concept, Design & Development by Pasindu Pathum<br>
+            <a href="privacy.html">Terms,Conditions,Privacy & Policy</a>
+        </div>
 
     </section>
 
@@ -190,17 +220,26 @@
 
 
     <!--------------javaScript for toggle menu----------------->
-    <script>
+     <script>
         var navLinks = document.getElementById("navLinks");
 
-            function hideMenu(){
+        function showMenu(){
+            navLinks.style.left="0px";
+        }function hideMenu(){
             navLinks.style.left="-200px";
-            }
-            function showMenu(){
-            navLinks.style.left="0";
-            }
-        
+        }let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
     </script>
-
 </body>
 </html>

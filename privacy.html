@@ -29,30 +29,36 @@
                 </ul>
             </div>
         </nav>
-        <h2>CONTACT US</h2>
+        <h2>Pi-Rates Online Geometry Solution<br></h2>
     </section>
-</head>
-<!-------------contact us content------------------>
-<body>
 
-<section class="contact-form">
-    <form action="">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
+<!------------------------------->
+    <section class="Privacy">
         
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-        
-        <label for="message">Message:</label><BR>
-        <textarea name="message" id="message" cols="69" rows="10" required></textarea>
-        <script>
-            function Send() {
-              alert("Your Messege Has Been Sent Successfully !");
-            }
-          </script>
-        <input type="submit" value="Send" onclick="Send">
-    </form>
-</div>
+	<h3>Terms and Conditions</h3>
+	<p>By using this website, you agree to the following terms and conditions:</p>
+	<p>1. You must be at least 13 years of age to use this website.</p>
+	<p>2. You will not use this website for any illegal purpose.</p>
+	<p>3. You will not reproduce, duplicate, copy, sell, resell or exploit any portion of this website.</p>
+	<p>4. You will not duplicate or copy any content from this website, including text, images, and videos.</p>
+	<p>5. You understand that we may at any time, without prior notice, change the terms and conditions of this website.</p>
+
+	<h3>Privacy</h3>
+	<p>This website is committed to protecting the privacy of our users. We will not disclose any personal information to any third party.</p>
+	<p>We may collect and use data for the following purposes:</p>
+	<p>1. To improve the services provided by this website.</p>
+	<p>2. To send promotional emails or other communications.</p>
+	<p>3. To analyze user behavior.</p>
+	<p>4. To identify user preferences.</p>
+	<p>5. To improve the website's usability.</p>
+
+	<h3>Policy</h3>
+	<p>1. We will not share any user data with any third party.</p>
+	<p>2. We will not use any user data for any purpose other than stated above.</p>
+	<p>3. We will not use any user data for any commercial purpose.</p>
+	<p>4. We will not disclose any user data to any government agency or law enforcement organization.</p>
+	<p>5. We will take reasonable measures to protect user data.</p>
+    </section>
 
 <!------------FOOTER-------------------->
 <section class="footer">
@@ -78,8 +84,7 @@
         </div>
 
 </section>
-
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
 
 
 
@@ -88,13 +93,23 @@
         var navLinks = document.getElementById("navLinks");
 
         function showMenu(){
-            navLinks.style.left="0";
-        }
-        function hideMenu(){
+            navLinks.style.left="0px";
+        }function hideMenu(){
             navLinks.style.left="-200px";
+        }let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         }
     </script>
 
 </body>
 </html>
-

@@ -92,42 +92,55 @@
 
 
 <!------------FOOTER-------------------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>We are the team "PI-RATES" and our vision is 
-            to share the whole knowledge about Geometry
-            and to do further researches on this field.<br> 
-            We are always here to help to the students who are interested in Geometry.
-        </p>
-        <h4>Visit Us</h4>
+<section class="footer">
+  <h4>About Us</h4>
+  <p>We are the team "PI-RATES" and our vision is 
+      to share the whole knowledge about Geometry
+      and to do further researches on this field.<br> 
+      We are always here to help to the students who are interested in Geometry.
+  </p>
+  <h4>Visit Us</h4>
 
-        <div class="icons">
-          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
-          <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
-      </div>
-        <p>Made by Pasindu Pathum</p>
+  <div class="icons">
+      <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+  </div>
+  <div class="copyright">
+      Copyright © 2023 - Pi-Rates - All rights reserved | Concept, Design & Development by Pasindu Pathum<br>
+      <a href="privacy.html">Terms,Conditions,Privacy & Policy</a>
+        </div>
 
-    </section>
+</section>
 
-
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
 
 
     <!--------------javaScript for toggle menu----------------->
     <script>
-        var navLinks = document.getElementById("navLinks");
+      var navLinks = document.getElementById("navLinks");
 
-        function showMenu(){
-            navLinks.style.left="0";
-        }
-        function hideMenu(){
-            navLinks.style.left="-200px";
-        }
-    </script>
+      function showMenu(){
+          navLinks.style.left="0px";
+      }function hideMenu(){
+          navLinks.style.left="-200px";
+      }let mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+      } else {
+          mybutton.style.display = "none";
+      }
+      }
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+  </script>
 
 </body>
 </html>

@@ -637,6 +637,7 @@
 			<a href="Enroll Form.html" class="visitus">Cick here to enroll</a>
 		</section>
 	
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
 
 <!------------FOOTER-------------------->
 <section class="footer">
@@ -656,9 +657,33 @@
 		<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
 		<a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
 	</div>
-	<p>Made by <i class="fa-solid fa-p"></i>asindu  <i class="fa fa-heart-o">  </i> <i class="fa-solid fa-p"></i>athum</p>
+	<div class="copyright">
+		Copyright © 2023 - Pi-Rates - All rights reserved | Concept, Design & Development by Pasindu Pathum<br>
+		<a href="privacy.html">Terms,Conditions,Privacy & Policy</a>
+        </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
 
-</section>
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.left="0px";
+	}function hideMenu(){
+		navLinks.style.left="-200px";
+	}let mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+	}
+	function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
+</script>
 	
 </body>
 </html>
