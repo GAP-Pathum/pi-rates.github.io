@@ -74,7 +74,7 @@ nav img{
     display:inline-block;
     text-decoration: none;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -89,6 +89,55 @@ nav img{
 nav .fa{
     display: none;
 }
+/*--.login{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.login:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;  
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}*/
 @media(max-width: 700px){
    
     .text-box h1{
@@ -271,7 +320,25 @@ h3{
     margin-bottom: 40px;
     padding: 0;
 }
-
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 99;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 255, 0, 0.555);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+#myBtn:hover {
+    background-color:#f44336;
+}
 /*----footer----*/
 
 .footer{
@@ -292,6 +359,15 @@ h3{
     margin-top: 0 13px;
     cursor: pointer;
     padding: 20px;
+}
+.icons .fa:hover {
+    color:#f44336;
+    margin-left: 2px;
+  }
+.copyright{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
 }
 
 /*----------About us page---------*/
@@ -592,3 +668,14 @@ form {
         padding: 20px;
         background-color: #ffffff;
     }
+
+/*-------------------privacy---------*/
+.Privacy{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.938),rgba(255, 255, 255, 0.87)),url("wallpaper2.jpg");
+    
+}
+.Privacy p{
+    color: #030303;
+    text-align: center;
+	margin-bottom: 1.5%;
+}
