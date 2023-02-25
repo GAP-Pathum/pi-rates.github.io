@@ -435,6 +435,9 @@ h3{
     margin-left: 0px;
     margin-right: 15px;
     }
+    .footer {
+        background-size:auto;
+    }
 }
 
 /*-------------------course page------------*/
