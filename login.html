@@ -1,74 +1,94 @@
-<html>
-  <head>
-    <title>Pi-Rates Log In/Sign Up</title>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-color: #f5f5f5;
-        font-size: 14px;
-        text-align: center;
-      }
-      .container {
-        width: 400px;
-        margin: 0 auto;
-        margin-top: 50px;
-      }
-      h1 {
-        font-size: 22px;
-        font-weight: bold;
-        color: #333;
-      }
-      input[type="text"], input[type="password"] {
-        width: 320px;
-        height: 40px;
-        padding: 0 20px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        font-size: 14px;
-        color: #333;
-        background-color: #fff;
-        line-height: 40px;
-      }
-      input[type="button"] {
-        width: 340px;
-        height: 40px;
-        padding: 0 20px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        font-size: 16px;
-        color: #fff;
-        background-color: #00bfff;
-        line-height: 40px;
-        cursor: pointer;
-      }
-      input[type="button"]:hover {
-        background-color: #0094ff;
-      }
-      a {
-        font-size: 14px;
-        color: #00bfff;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Pi-Rates Log In/Sign Up</h1>
-      <form>
-        <input type="text" placeholder="Username or Email" />
-        <input type="password" placeholder="Password" />
-        <input type="button" value="Log In" />
-        <a href="#">Forgot Password?</a>
-      </form>
-      <h1>Don't have an account?</h1>
-      <input type="button" value="Sign Up" />
-    </div>
-    <script>
-      document.querySelector("input[type='button']").addEventListener("click", function(){
-        alert("Log in successful!");
-      });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirates website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1023cb38a0.js" crossorigin="anonymous">
+
     </script>
-  </body>
+</head>
+<body>
+    <section class="AU-header">
+        <nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2>Welcome Back</h2>
+    </section>
+</head>
+<!-------------contact us content------------------>
+<body>
+
+<section class="contact-form">
+        <div class="container">
+            <form action="">
+            <h1>Sign in from here</h1>
+                <label>User Name:</label>
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <label>Password</label>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button id="sign">Login</button>
+            </form>
+            <p1>New here? <a href="register.html">Register</a></p1>
+        </div>
+</section>
+
+<!------------FOOTER-------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are the team "PI-RATES" and our vision is 
+        to share the whole knowledge about Geometry
+        and to do further researches on this field.<br> 
+        We are always here to help to the students who are interested in Geometry.
+    </p>
+    <h4>Visit Us</h4>
+
+    <div class="icons">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="copyright">
+        Copyright © 2023 - Pi-Rates - All rights reserved | Concept, Design & Development by Pasindu Pathum<br>
+        <a href="privacy.html">Terms,Conditions,Privacy & Policy</a>
+        </div>
+
+</section>
+
+
+
+
+
+    <!--------------javaScript for toggle menu----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.left="0";
+        }
+        function hideMenu(){
+            navLinks.style.left="-200px";
+        }
+    </script>
+
+</body>
 </html>

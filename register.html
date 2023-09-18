@@ -18,10 +18,6 @@
         <nav>
             <i class="fa fa-bars" onclick="showMenu()"></i>
             <a href="index.html"><img src="logo.png"></a>
-            <div class="but">
-                <a href="login.html"><button onclick="" id="sign" title="Sign in">Sign in</button></a>
-                <a href="register.html"><button onclick id="sign" title="Sign up">Sign up</button></a>
-            </div>
             <div class="nav-links" id="navLinks">
             <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
@@ -31,37 +27,29 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact us.html">CONTACT</a></li>
                 </ul>
+            </div>
         </nav>
-        <h2>Pi-Rates<br></h2>
+        <h2>Hi new one!</h2>
     </section>
+</head>
+<!-------------contact us content------------------>
+<body>
 
-<!------------------------------->
-    <section class="Privacy">
-        
-	<h3>Terms and Conditions</h3>
-	<p>By using this website, you agree to the following terms and conditions:</p>
-	<p>1. You must be at least 13 years of age to use this website.</p>
-	<p>2. You will not use this website for any illegal purpose.</p>
-	<p>3. You will not reproduce, duplicate, copy, sell, resell or exploit any portion of this website.</p>
-	<p>4. You will not duplicate or copy any content from this website, including text, images, and videos.</p>
-	<p>5. You understand that we may at any time, without prior notice, change the terms and conditions of this website.</p>
-
-	<h3>Privacy</h3>
-	<p>This website is committed to protecting the privacy of our users. We will not disclose any personal information to any third party.</p>
-	<p>We may collect and use data for the following purposes:</p>
-	<p>1. To improve the services provided by this website.</p>
-	<p>2. To send promotional emails or other communications.</p>
-	<p>3. To analyze user behavior.</p>
-	<p>4. To identify user preferences.</p>
-	<p>5. To improve the website's usability.</p>
-
-	<h3>Policy</h3>
-	<p>1. We will not share any user data with any third party.</p>
-	<p>2. We will not use any user data for any purpose other than stated above.</p>
-	<p>3. We will not use any user data for any commercial purpose.</p>
-	<p>4. We will not disclose any user data to any government agency or law enforcement organization.</p>
-	<p>5. We will take reasonable measures to protect user data.</p>
-    </section>
+<section class="contact-form">
+        <div class="container">
+            <h1>Join the Pi-rates Crew!</h1>
+            <form id="registerForm">
+                <label for="registerUsername">Choose a username</label>
+                <input type="text" id="registerUsername" placeholder="Choose a username" required>
+                <label for="registerPassword">Choose a password</label>
+                <input type="password" id="registerPassword" placeholder="Choose a password" required>
+                <label for="confirmPassword">Confirm the password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                <button id="sign">Register</button>
+            </form>
+            <p1>Already have an account? <a href="login.html">Login</a></p1>
+        </div>
+</section>
 
 <!------------FOOTER-------------------->
 <section class="footer">
@@ -87,7 +75,8 @@
         </div>
 
 </section>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+
+
 
 
 
@@ -96,21 +85,10 @@
         var navLinks = document.getElementById("navLinks");
 
         function showMenu(){
-            navLinks.style.left="0px";
-        }function hideMenu(){
+            navLinks.style.left="0";
+        }
+        function hideMenu(){
             navLinks.style.left="-200px";
-        }let mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
         }
     </script>
 
