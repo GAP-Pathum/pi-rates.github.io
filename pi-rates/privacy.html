@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirates website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1023cb38a0.js" crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+    <section class="AU-header">
+        <nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="but">
+                <a href="login.html"><button onclick="" id="sign" title="Sign in">Sign in</button></a>
+                <a href="register.html"><button onclick id="sign" title="Sign up">Sign up</button></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+        </nav>
+        <h2>Pi-Rates<br></h2>
+    </section>
+
+<!------------------------------->
+    <section class="Privacy">
+        
+	<h3>Terms and Conditions</h3>
+	<p>By using this website, you agree to the following terms and conditions:</p>
+	<p>1. You must be at least 13 years of age to use this website.</p>
+	<p>2. You will not use this website for any illegal purpose.</p>
+	<p>3. You will not reproduce, duplicate, copy, sell, resell or exploit any portion of this website.</p>
+	<p>4. You will not duplicate or copy any content from this website, including text, images, and videos.</p>
+	<p>5. You understand that we may at any time, without prior notice, change the terms and conditions of this website.</p>
+
+	<h3>Privacy</h3>
+	<p>This website is committed to protecting the privacy of our users. We will not disclose any personal information to any third party.</p>
+	<p>We may collect and use data for the following purposes:</p>
+	<p>1. To improve the services provided by this website.</p>
+	<p>2. To send promotional emails or other communications.</p>
+	<p>3. To analyze user behavior.</p>
+	<p>4. To identify user preferences.</p>
+	<p>5. To improve the website's usability.</p>
+
+	<h3>Policy</h3>
+	<p>1. We will not share any user data with any third party.</p>
+	<p>2. We will not use any user data for any purpose other than stated above.</p>
+	<p>3. We will not use any user data for any commercial purpose.</p>
+	<p>4. We will not disclose any user data to any government agency or law enforcement organization.</p>
+	<p>5. We will take reasonable measures to protect user data.</p>
+    </section>
+
+<!------------FOOTER-------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are the team "PI-RATES" and our vision is 
+        to share the whole knowledge about Geometry
+        and to do further researches on this field.<br> 
+        We are always here to help to the students who are interested in Geometry.
+    </p>
+    <h4>Visit Us</h4>
+
+    <div class="icons">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="copyright">
+        Copyright © 2023 - Pi-Rates - All rights reserved | Concept, Design & Development by Pasindu Pathum<br>
+        <a href="privacy.html">Terms,Conditions,Privacy & Policy</a>
+        </div>
+
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+
+
+
+    <!--------------javaScript for toggle menu----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.left="0px";
+        }function hideMenu(){
+            navLinks.style.left="-200px";
+        }let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
