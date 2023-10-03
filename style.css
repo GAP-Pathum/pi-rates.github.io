@@ -107,7 +107,6 @@ nav .fa{
     transition: 1s;
 }
 
-
 @media(max-width: 700px){
    
     .text-box h1{
@@ -136,10 +135,15 @@ nav .fa{
     }
     .nav-links ul{
         padding: 30px;
-    }  
-    #sign{
-        flex: -1;
     }
+    #logo{
+        padding: 15%;
+        display: flex;
+        margin-left: -130%;
+    }
+    #sign{
+        margin-left:-20px;
+    }  
 }
 /*-----------course------------*/
 
